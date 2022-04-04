@@ -1,0 +1,39 @@
+database name---------->use meeting_room_booking;
+
+*******register table**********
+
+create table register(
+id int not null auto_increment unique,
+username varchar(45) primary key,
+email varchar(45),
+password varchar(45),
+phone varchar(10),
+occupancy varchar(200),
+token varchar(200)
+);
+
+********meetingSchedule table*************
+
+create table meetingSchedule(
+id int auto_increment primary key,
+attendees varchar(300),
+title varchar(100),
+loginEmail varchar(45) ,
+startdate date,
+enddate date,
+starttime time,
+endtime time
+); 
+
+
+***********rooms table**************
+
+create table rooms 
+(id int primary key auto_increment,roomName varchar(50),occupancyString varchar(100));
+
+
+**********insert data in rooms table*****************
+
+insert into rooms values(2,'Cave','000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000');
+insert into rooms values(3,'Tower','000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000');
+insert into rooms values(1,'Mansion','000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000');

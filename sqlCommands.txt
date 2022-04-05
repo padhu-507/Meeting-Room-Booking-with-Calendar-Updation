@@ -22,7 +22,8 @@ loginEmail varchar(45) ,
 startdate date,
 enddate date,
 starttime time,
-endtime time
+endtime time,
+roomname varchar(45)
 ); 
 
 

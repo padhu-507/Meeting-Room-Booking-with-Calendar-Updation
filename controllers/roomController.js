@@ -15,7 +15,7 @@ let getRoomsPage = function (req, res, next) {
     success: "",
     error: "",
     messages: "",
-    loginEmail: loginEmail
+    loginEmail: loginEmail,
   });
 };
 
@@ -105,21 +105,23 @@ const bookRoom = function (req, res) {
                               attend = data1[i].replace("@gmail.com", "");
                             }
                             con.query(
-                              "Insert into meetingSchedule(attendees,loginEmail,title,startdate,enddate,starttime,endtime) values('" +
-                              attend +
-                              "','" +
-                              email +
-                              "','" +
-                              title +
-                              "','" +
-                              startdate +
-                              "','" +
-                              enddate +
-                              "','" +
-                              starttime +
-                              "','" +
-                              endtime +
-                              "')"
+                              "Insert into meetingSchedule(attendees,loginEmail,title,startdate,enddate,starttime,endtime,roomname) values('" +
+                                attend +
+                                "','" +
+                                email +
+                                "','" +
+                                title +
+                                "','" +
+                                startdate +
+                                "','" +
+                                enddate +
+                                "','" +
+                                starttime +
+                                "','" +
+                                endtime +
+                                "','" +
+                                roomName +
+                                "')"
                             );
 
                             roomData(email);
@@ -153,5 +155,5 @@ const bookRoom = function (req, res) {
 module.exports = {
   getRoomsPage,
   bookRoom,
-  loginPerson
+  loginPerson,
 };

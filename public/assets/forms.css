@@ -15,7 +15,7 @@ p {
   position: relative;
 }
 
-li a[class="welcome"]{
+li a[class="welcome"] {
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
@@ -51,7 +51,7 @@ li a[class="welcome"]{
 .row {
   margin-top: 100px;
   text-align: center;
-  color: green
+  color: green;
 }
 
 #user {
@@ -66,14 +66,14 @@ li a[class="welcome"]{
   text-align: center;
   color: red;
   font-weight: bold;
-  font-family: "system-ui",
+  font-family: "system-ui";
 }
 
 .alert-success {
   margin-top: 30px;
   text-align: center;
   color: green;
-  font-weight: bold
+  font-weight: bold;
 }
 
 #login-form {
@@ -128,14 +128,14 @@ input[type="endtime"]:focus:invalid {
   border-color: #cc1e2b;
 }
 
-input[type="text"]:valid~.validation,
-input[type="password"]:valid~.validation,
-input[type="email"]:valid~.validation,
-input[type="number"]:valid~.validation,
-input[type="startdate"]:valid~.validation,
-input[type="enddate"]:valid~.validation,
-input[type="starttime"]:valid~.validation,
-input[type="endtime"]:valid~.validation {
+input[type="text"]:valid ~ .validation,
+input[type="password"]:valid ~ .validation,
+input[type="email"]:valid ~ .validation,
+input[type="number"]:valid ~ .validation,
+input[type="startdate"]:valid ~ .validation,
+input[type="enddate"]:valid ~ .validation,
+input[type="starttime"]:valid ~ .validation,
+input[type="endtime"]:valid ~ .validation {
   top: 30px;
   left: 14px;
   width: 20px;
@@ -159,7 +159,7 @@ input[type="endtime"]:valid~.validation {
   width: 40%;
   display: none;
   background: linear-gradient(#2e2d32);
-  color: #E4405F;
+  color: #e4405f;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -215,7 +215,7 @@ input[type="endtime"]:valid~.validation {
   padding-top: 12px;
   padding-left: 10px;
   margin-right: 10px;
-  color: #E4405F;
+  color: #e4405f;
   font-size: 20px;
 }
 
@@ -224,7 +224,7 @@ input[type="endtime"]:valid~.validation {
   position: absolute;
   left: 330px;
   padding-top: 20px;
-  color: #E4405F;
+  color: #e4405f;
   font-size: 15px;
 }
 
@@ -241,10 +241,11 @@ tr tr[role="row"] {
 #fc-dom-1 {
   margin-top: 70px;
   font-size: 1.05em;
-  color: #2b3e51
+  color: #2b3e51;
+  padding-left: 170px;
 }
 
-i[class="bi bi-person"]{
+i[class="bi bi-person"] {
   color: white;
   padding-left: 1235px;
   margin-top: 14px;
@@ -255,7 +256,7 @@ i[class="bi bi-person"]{
 }
 
 h2 {
-  color: #E4405F;
+  color: #e4405f;
   text-transform: uppercase;
   font-size: 23px;
   font-weight: bold;
@@ -281,14 +282,14 @@ h2 {
   font-size: 12px;
   margin-top: 20px;
   padding-left: 10px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
-  color: #E4405F;
+  color: #e4405f;
 }
 
 #loginPage3 {
   font-size: 20px;
-  color: #E4405F;
+  color: #e4405f;
   text-decoration: underline;
 }
 
@@ -321,7 +322,7 @@ h2 {
 }
 
 .logo1 {
-  background-color: #E4405F;
+  background-color: #e4405f;
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
   height: 80px;
   top: 0;
@@ -336,8 +337,8 @@ a {
 
 #clickHere {
   font-size: 16px;
-  color: #E4405F;
-  font-family: 'Poppins';
+  color: #e4405f;
+  font-family: "Poppins";
   font-weight: bold;
   text-decoration: underline;
   padding-right: 40px;
@@ -345,8 +346,8 @@ a {
 
 #clickHere1 {
   font-size: 16px;
-  color: #E4405F;
-  font-family: 'Poppins';
+  color: #e4405f;
+  font-family: "Poppins";
   font-weight: bold;
   text-decoration: underline;
   padding-left: 50px;
@@ -360,7 +361,7 @@ a {
   font-family: inherit;
 }
 
-#available{
+#available {
   font-size: 22px;
   font-weight: bold;
   font-family: inherit;

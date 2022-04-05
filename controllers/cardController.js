@@ -1,4 +1,5 @@
 var con = require("../connection");
+const { roomData } = require("./calendarController");
 
 var loginUser;
 
@@ -33,8 +34,23 @@ const displayRooms = function (req, res, user) {
   });
 };
 
+const deleteId = function (req, res) {
+  const userId = req.params.id;
+  let sql = `delete from meetingSchedule where id=${userId}`;
+  con.query(sql, (err, result) => {
+    if (err) throw err;
+    res.redirect("/displayRooms");
+    attendeesData =
+      typeof attendeesData != "undefined"
+        ? attendeesData.replace("@gmail.com", "")
+        : "";
+    roomData(attendeesData);
+  });
+};
+
 module.exports = {
   getDisplayRooms,
   displayRooms,
   signinUser,
+  deleteId,
 };

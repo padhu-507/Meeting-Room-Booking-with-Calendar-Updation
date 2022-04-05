@@ -1,4 +1,3 @@
-
 var con = require("../connection");
 
 var signinEmail;
@@ -15,13 +14,14 @@ const getCalendar = function (req, res, next) {
     success: "",
     error: "",
     calendarEvents: calendarEvents,
-    signinEmail: signinEmail
+    signinEmail: signinEmail,
   });
 };
 
 let roomData = function (attendeesData) {
   var sql =
-    "select title,startdate,enddate,starttime,endtime from meetingSchedule where loginEmail='" +attendeesData +
+    "select roomname,title,startdate,enddate,starttime,endtime from meetingSchedule where loginEmail='" +
+    attendeesData +
     "' OR attendees LIKE '%" +
     attendeesData +
     "%' ";
@@ -33,6 +33,14 @@ let roomData = function (attendeesData) {
     if (err) throw err;
     for (let i = 0; i < resources.length; i++) {
       let params = {
+        resourceId:
+          resources[i].roomname === "Cave"
+            ? (resources[i].resourceId = "a")
+            : resources[i].roomname === "Mansion"
+            ? (resources[i].resourceId = "c")
+            : resources[i].roomname === "Tower"
+            ? (resources[i].resourceId = "b")
+            : [],
         title: resources[i].title,
         start:
           resources[i].startdate.toString().split(" ")[3] +
@@ -60,5 +68,5 @@ module.exports = {
   getCalendar,
   roomData: roomData,
   calendarEvents: calendarEvents,
-  signinPerson
+  signinPerson,
 };

@@ -40,18 +40,4 @@ app.use("", require("./routes/roomRoutes"));
 app.use("", require("./routes/cardRoutes"));
 app.use("", require("./routes/calendarRoutes"));
 
-// app.get("/delete/:id", function (req, res) {
-//   const userId = req.params.id;
-//   let sql = `delete from meetingSchedule where id=${userId}`;
-//   con.query(sql, (err, result) => {
-//     if (err) throw err;
-//     res.redirect("/displayRooms");
-//     attendeesData =
-//       typeof attendeesData != "undefined"
-//         ? attendeesData.replace("@gmail.com", "")
-//         : "";
-//     roomData(attendeesData);
-//   });
-// });
-
 app.listen(5000, () => console.log("server is running at port no : 5000"));

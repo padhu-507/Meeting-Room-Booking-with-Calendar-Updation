@@ -12,7 +12,7 @@ article {
   font-size: 12px;
 }
 
-li a[class="welcome"]{
+li a[class="welcome"] {
   text-decoration: none;
   font-family: poppins;
   font-size: 20px;
@@ -43,7 +43,7 @@ li a[class="welcome"]{
 }
 
 /* .all-cards article  { */
- article  {
+article {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -63,33 +63,38 @@ li a[class="welcome"]{
   transition: 0.2s all;
 }
 
-
-article #button{
+article #button {
   margin-right: 100px;
   margin-top: 130px;
   width: 100px;
   height: 40px;
-  color: #E4405F;
+  color: #e4405f;
   font-weight: bold;
   font-size: 15px;
 }
 
 article p {
-  padding-left: 150px;
+  padding-left: 280px;
+
   padding-top: 20px;
+
   text-align: center;
+
   font-size: 20px;
 }
 
 article div h3 {
   text-align: center;
+
   padding-top: 20px;
-  padding-left: 150px;
+
+  padding-left: 300px;
+
   font-size: 18px;
 }
 
 .logo1 {
-  background-color: #E4405F;
+  background-color: #e4405f;
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
   height: 80px;
   position: fixed;
